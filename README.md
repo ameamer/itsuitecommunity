@@ -14,7 +14,7 @@ Below is a brief guide on the prerequisites before starting the ITSuite Communit
 Database creation with minimum mandatory data (user: admin, password: adminadmin):
 
 * Open the project in Visual Studio 2019;
-* Create a new SQL Server database called **itstdb.mdf**;
+* Create a new SQL Server database called **itstdb.mdf** in **App_Data** folder;
 * Run the queries contained in the "**App_Data\SQL**" folder. Run files starting with "**LAST**" last;
 * At this point it will be possible to start the project by accessing ITSuite with the admin / adminadmin credentials. 
 

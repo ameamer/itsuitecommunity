@@ -1,0 +1,343 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="Styles/master.css" />
+<link rel="stylesheet" type="text/css" href="Styles/dropdowntopmenu.css" />
+<link rel="stylesheet" type="text/css" href="Styles/custom.css" />
+<title>ITSuite by Ame Amer (admin@ameamer.com)</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="generalbody">
+    <!-- Container generale -->
+    <div class="container">
+
+        <!-- Sezione superiore (logo/menu) -->
+        <div class="logo-div-sup">
+
+            <!-- Logo -->
+            <div class="logo-div-sup-logoimage">
+                <% If (userType = "cliente") Then %>
+                <a href="../gestione_guasti/gestione_guasti_all.aspx" style="text-decoration: none">
+                    <img src="../img/itsuite_logo.png" style="border: 0px solid black; margin-left: 5px;" />
+                </a>
+                <% else %>
+                <a href="../scelta_servizio/scelta_servizio_admin.aspx" style="text-decoration: none">
+                    <img src="../img/itsuite_logo.png" style="border: 0px solid black; margin-left: 5px;" />
+                </a>
+                <% End if %>
+            </div>
+
+            <!-- Profilo -->
+            <div class="logo-div-sup-menu" onmouseout="document.getElementById('dropdown-gestprof').style.display='none'" onmouseover="document.getElementById('dropdown-gestprof').style.display='block'">
+                <div class="logo-div-sup-menu-item">
+                 <%= globals.ResourceHelper.GetString("String109")%>
+                        
+        <div class="arrow-down-menu">
+        </div>
+
+                    <div class="username-down-menu-item">
+                        <%=usrnm %>
+                    </div>
+
+                </div>
+                <div id="dropdown-gestprof" class="logo-div-sup-menu-container-dropdown">
+                    <div class="title-general-submenu">
+                        <%=usrnm %>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_utenti/dettagli_utente.aspx?id=<%=iduser%>'">
+                        <a href="../gestione_utenti/dettagli_utente.aspx?id=<%=iduser%>"><%= globals.ResourceHelper.GetString("String110")%></a>
+                    </div>
+
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../logout.aspx'">
+                        <a href="../logout.aspx"><%= globals.ResourceHelper.GetString("String111")%></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servizi CED -->
+            <% If (userType = "personale" And (enablehwtkt = "0" And enabletkt = "0" And enableass = "0"))Then %>
+            <!-- Menu non abilitato -->
+            <% else %>
+            <div class="logo-div-sup-menu" onmouseout="document.getElementById('dropdown-serviziced').style.display='none'" onmouseover="document.getElementById('dropdown-serviziced').style.display='block'">
+                <div class="logo-div-sup-menu-item">
+                    <%= globals.ResourceHelper.GetString("String72")%>
+        <div class="arrow-down-menu">
+        </div>
+                </div>
+                <div id="dropdown-serviziced" class="logo-div-sup-menu-container-dropdown">
+
+                    <% If (userType = "admin") Or (userType = "personale" And enablehwtkt = "1") Then %>
+                    <!-- PC -->
+                    <div class="logo-div-sup-menu-dropdown" style="cursor: default" onmouseout="document.getElementById('serviziced-gestionepc-dropdown').style.display='none'" onmouseover="document.getElementById('serviziced-gestionepc-dropdown').style.display='block'">
+                         <%= globals.ResourceHelper.GetString("String73")%>
+                        <div class="freccia-destra-dropdown-menu"></div>
+                        <div id="serviziced-gestionepc-dropdown" class="logo-div-sup-menu-container-dropdown-gestionepcdropdown">
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_pc/listapc.aspx'">
+                                <a href="../gestione_pc/listapc.aspx"><%= globals.ResourceHelper.GetString("String74")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_pc/listamonitor.aspx'">
+                                <a href="../gestione_pc/listamonitor.aspx"><%= globals.ResourceHelper.GetString("String75")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_pc/gestione_pc_home.aspx'">
+                                <a href="../gestione_pc/gestione_pc_home.aspx"><%= globals.ResourceHelper.GetString("String76")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_pc/inserisci_pc_home.aspx'">
+                                <a href="../gestione_pc/inserisci_pc_home.aspx"><%= globals.ResourceHelper.GetString("String77")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_pc/log.aspx'">
+                                <a href="../gestione_pc/log.aspx"><%= globals.ResourceHelper.GetString("String16")%></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stampanti -->
+                    <div class="logo-div-sup-menu-dropdown" style="cursor: default" onmouseout="document.getElementById('serviziced-gestionestampanti-dropdown').style.display='none'" onmouseover="document.getElementById('serviziced-gestionestampanti-dropdown').style.display='block'">
+                        <%= globals.ResourceHelper.GetString("String78")%>
+                        <div class="freccia-destra-dropdown-menu"></div>
+                        <div id="serviziced-gestionestampanti-dropdown" class="logo-div-sup-menu-container-dropdown-gestionepcdropdown">
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_stampanti/gestione_stampanti_lista.aspx'">
+                                <a href="../gestione_stampanti/gestione_stampanti_lista.aspx"><%= globals.ResourceHelper.GetString("String79")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_stampanti/ricerca_stampante.aspx'">
+                                <a href="../gestione_stampanti/ricerca_stampante.aspx"><%= globals.ResourceHelper.GetString("String80")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_stampanti/inserisci_stampante.aspx'">
+                                <a href="../gestione_stampanti/inserisci_stampante.aspx"><%= globals.ResourceHelper.GetString("String81")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_stampanti/log.aspx'">
+                                <a href="../gestione_stampanti/log.aspx"><%= globals.ResourceHelper.GetString("String16")%></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Altro hw -->
+                    <div class="logo-div-sup-menu-dropdown" style="cursor: default" onmouseout="document.getElementById('serviziced-gestionealtrohw-dropdown').style.display='none'" onmouseover="document.getElementById('serviziced-gestionealtrohw-dropdown').style.display='block'">
+                        <%= globals.ResourceHelper.GetString("String82")%>
+            <div class="freccia-destra-dropdown-menu"></div>
+                        <div id="serviziced-gestionealtrohw-dropdown" class="logo-div-sup-menu-container-dropdown-gestionepcdropdown">
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_altro_hardware/gestione_altrohw_lista.aspx'">
+                                <a href="../gestione_altro_hardware/gestione_altrohw_lista.aspx"><%= globals.ResourceHelper.GetString("String83")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_altro_hardware/altro_hw_home.aspx'">
+                                <a href="../gestione_altro_hardware/altro_hw_home.aspx"><%= globals.ResourceHelper.GetString("String84")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_altro_hardware/inserisci_hw_home.aspx'">
+                                <a href="../gestione_altro_hardware/inserisci_hw_home.aspx"><%= globals.ResourceHelper.GetString("String85")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_altro_hardware/log.aspx'">
+                                <a href="../gestione_altro_hardware/log.aspx"><%= globals.ResourceHelper.GetString("String16")%></a>
+                            </div>
+                        </div>
+                    </div>
+                    <% End If %>
+
+                    <!-- Gestione guasti -->
+                    <% If enabletkt = "1" Then %>
+                    <div class="logo-div-sup-menu-dropdown" onmouseout="document.getElementById('gestionguasti-gestionealtrohw-dropdown').style.display='none'" onmouseover="document.getElementById('gestionguasti-gestionealtrohw-dropdown').style.display='block'">
+                       <%= globals.ResourceHelper.GetString("String86")%>
+                        <div class="freccia-destra-dropdown-menu"></div>
+                        <div id="gestionguasti-gestionealtrohw-dropdown" class="logo-div-sup-menu-container-dropdown-gestionepcdropdown">
+                            <% If userType = "admin" Then %>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_guasti/nuovo_guasto.aspx'">
+                                <a href="../gestione_guasti/nuovo_guasto.aspx"><%= globals.ResourceHelper.GetString("String22")%></a>
+                            </div>
+                            <% End If %>
+                            <% If userType = "admin" Or userType = "personale" Then %>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_guasti/ricerca_guasto.aspx'">
+                                <a href="../gestione_guasti/ricerca_guasto.aspx"><%= globals.ResourceHelper.GetString("String87")%></a>
+                            </div>
+                            <% End if %>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_guasti/gestione_guasti_all.aspx'">
+                                <a href="../gestione_guasti/gestione_guasti_all.aspx"><%= globals.ResourceHelper.GetString("String88")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_guasti/gestione_guasti_home.aspx'">
+                                <a href="../gestione_guasti/gestione_guasti_home.aspx"><%= globals.ResourceHelper.GetString("String19")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_guasti/gestione_guasti_inattesa.aspx'">
+                                <a href="../gestione_guasti/gestione_guasti_inattesa.aspx"><%= globals.ResourceHelper.GetString("String20")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_guasti/gestione_guasti_chiusi.aspx'">
+                                <a href="../gestione_guasti/gestione_guasti_chiusi.aspx"><%= globals.ResourceHelper.GetString("String21")%></a>
+                            </div>
+                            <% If userType = "admin" Or userType = "personale" Then %>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_guasti/log.aspx'">
+                                <a href="../gestione_guasti/log.aspx"><%= globals.ResourceHelper.GetString("String16")%></a>
+                            </div>
+                            <% End if %>
+                        </div>
+                    </div>
+                    <% End If %>
+
+                    <!-- Assistenza prodotti -->
+                    <% If (userType = "personale" And enableasstkt = "1" And enableass = "1") Or (userType = "admin" And enableass = "1") Then %>
+                    <div class="logo-div-sup-menu-dropdown" onmouseout="document.getElementById('gestionass-dropdown').style.display='none'" onmouseover="document.getElementById('gestionass-dropdown').style.display='block'">
+                      <%= globals.ResourceHelper.GetString("String89")%>
+                        <div class="freccia-destra-dropdown-menu"></div>
+                        <div id="gestionass-dropdown" class="logo-div-sup-menu-container-dropdown-gestionepcdropdown">
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../assistenza_prodotti/nuova_assistenza.aspx'">
+                                <a href="../assistenza_prodotti/nuova_assistenza.aspx"><%= globals.ResourceHelper.GetString("String32")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../assistenza_prodotti/ricerca_assistenze.aspx'">
+                                <a href="../assistenza_prodotti/ricerca_assistenze.aspx"><%= globals.ResourceHelper.GetString("String90")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../assistenza_prodotti/assistenza_prodotti_all.aspx'">
+                                <a href="../assistenza_prodotti/assistenza_prodotti_all.aspx"><%= globals.ResourceHelper.GetString("String91")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../assistenza_prodotti/assistenza_prodotti_home.aspx'">
+                                <a href="../assistenza_prodotti/assistenza_prodotti_home.aspx"><%= globals.ResourceHelper.GetString("String30")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../assistenza_prodotti/assistenza_prodotti_chiuse.aspx'">
+                                <a href="../assistenza_prodotti/assistenza_prodotti_chiuse.aspx"><%= globals.ResourceHelper.GetString("String31")%></a>
+                            </div>
+                            <div class="logo-div-sup-menu-dropdown" onclick="location.href='../assistenza_prodotti/log.aspx'">
+                                <a href="../assistenza_prodotti/log.aspx"><%= globals.ResourceHelper.GetString("String16")%></a>
+                            </div>
+                        </div>
+                    </div>
+                    <% End If %>
+
+                    <!-- Servizi di rete -->
+                    <% If userType = "admin" Then %>
+                    <% If enablenetsrv = "1" Then %>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../servizi_rete/servizi_rete_home.aspx'">
+                        <a href="../servizi_rete/servizi_rete_home.aspx"><%= globals.ResourceHelper.GetString("String92")%></a>
+                    </div>
+                    <% End If %>
+                    <% End if %>
+
+                    <% If userType = "admin" Or userType = "personale" Then %>
+                    <!-- Servizi windows -->
+                    <% If enablewin = "1" Then %>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../servizi_windows/servizi_windows_home.aspx'">
+                        <a href="../servizi_windows/servizi_windows_home.aspx"><%= globals.ResourceHelper.GetString("String93")%></a>
+                    </div>
+                    <% End If %>
+
+                    <!-- Software aziendale -->
+                    <% If enableswaz = "1" Then %>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../software_aziendale/software_aziendale_home.aspx'">
+                        <a href="../software_aziendale/software_aziendale_home.aspx"><%= globals.ResourceHelper.GetString("String94")%></a>
+                    </div>
+                    <% End If %>
+                    <% End if %>
+                </div>
+            </div>
+            <% End If %>
+
+            <% If userType = "admin" Then %>
+            <!-- Gestione utenti -->
+            <div class="logo-div-sup-menu" onmouseout="document.getElementById('dropdown-gestuser').style.display='none'" onmouseover="document.getElementById('dropdown-gestuser').style.display='block'">
+                <div class="logo-div-sup-menu-item">
+                   <%= globals.ResourceHelper.GetString("String95")%>
+        <div class="arrow-down-menu">
+        </div>
+                </div>
+                <div id="dropdown-gestuser" class="logo-div-sup-menu-container-dropdown">
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_utenti/gestione_utenti_home.aspx'">
+                        <a href="../gestione_utenti/gestione_utenti_home.aspx"><%= globals.ResourceHelper.GetString("String96")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_utenti/nuovo_utente.aspx'">
+                        <a href="../gestione_utenti/nuovo_utente.aspx"><%= globals.ResourceHelper.GetString("String97")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_utenti/ricerca_utenti.aspx'">
+                        <a href="../gestione_utenti/ricerca_utenti.aspx"><%= globals.ResourceHelper.GetString("String98")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_utenti/log.aspx'">
+                        <a href="../gestione_utenti/log.aspx"><%= globals.ResourceHelper.GetString("String16")%></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opzioni generali -->
+            <div class="logo-div-sup-menu" onmouseout="document.getElementById('dropdown-opzioni').style.display='none'" onmouseover="document.getElementById('dropdown-opzioni').style.display='block'">
+                <div class="logo-div-sup-menu-item">
+                    <%= globals.ResourceHelper.GetString("String99")%>
+        <div class="arrow-down-menu">
+        </div>
+                </div>
+                <div id="dropdown-opzioni" class="logo-div-sup-menu-container-dropdown">
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../opzioni_generali/opzioni_generali_home.aspx'">
+                        <a href="../opzioni_generali/opzioni_generali_home.aspx"><%= globals.ResourceHelper.GetString("String100")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_liste/gestione_liste_home.aspx'">
+                        <a href="../gestione_liste/gestione_liste_home.aspx"><%= globals.ResourceHelper.GetString("String101")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../opzioni_generali/opzioni_generali_home_swaz.aspx'">
+                        <a href="../opzioni_generali/opzioni_generali_home_swaz.aspx"><%= globals.ResourceHelper.GetString("String102")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../opzioni_generali/opzioni_generali_home_comp.aspx'">
+                        <a href="../opzioni_generali/opzioni_generali_home_comp.aspx"><%= globals.ResourceHelper.GetString("String103")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../opzioni_generali/opzioni_generali_home_email.aspx'">
+                        <a href="../opzioni_generali/opzioni_generali_home_email.aspx"><%= globals.ResourceHelper.GetString("String104")%></a>
+                    </div>
+                    <div class="logo-div-sup-menu-dropdown" onclick="location.href='../gestione_db/gestione_db_home.aspx'">
+                        <a href="../gestione_db/gestione_db_home.aspx"><%= globals.ResourceHelper.GetString("String105")%></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <% End if %>
+
+            <!-- Funzioni (componenti aggiuntivi) -->
+            <% If (userType = "personale") Or (userType = "admin") Or (userType = "cliente") Then %>
+            <div class="logo-div-sup-menu" onmouseout="document.getElementById('dropdown-comp').style.display='none'" onmouseover="document.getElementById('dropdown-comp').style.display='block'">
+                <div class="logo-div-sup-menu-item">
+                  <%= globals.ResourceHelper.GetString("String106")%>
+        <div class="arrow-down-menu">
+        </div>
+                </div>
+                <asp:Label ID="FucLabel" runat="server"></asp:Label>
+            </div>
+            <% End if %>
+
+            <!-- Strumenti -->
+            <% If userType = "admin" Or userType = "personale" Then %>
+            <div class="logo-div-sup-menu" onclick="location.href='../strumenti/strumenti_home.aspx'">
+                <div class="logo-div-sup-menu-item">
+                   <%= globals.ResourceHelper.GetString("String107")%>
+                </div>
+            </div>
+            <% End if %>
+        </div>
+
+        <!-- Titolo sezione -->
+        <div class="center-title" id="GeneralTitle">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderTitle" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Sottotitolo sezione -->
+        <div id="sub-found-result" class="center-subtitle">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderSubTitle" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Parte centrale -->
+        <div class="div-central" id="GeneralBodyCentral">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderCentral" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Logo | Footer -->
+        <div class="logo-div-inf">
+            <a href="http://www.ameamer.com" target="_blank"><img src="../img/logo_scritta_small.png" /></a>
+            <br />
+            <%=versionString%>
+            <br />
+            <a href="http://www.ameamer.com/itsuite" target="_blank"><%=editionString%></a> - <a href="https://opensource.org/licenses/bsd-license.php" target="_blank"><%=licenseString%></a>
+            <br />
+            <%=copyrightString%>&nbsp;<a href="http://www.ameamer.com" target="_blank">Ame Amer</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

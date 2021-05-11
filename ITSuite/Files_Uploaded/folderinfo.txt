@@ -1,0 +1,4 @@
+﻿In questa cartella sono presenti i file caricati dagli utenti. La modifica di questi file potrebbe compromettere il corretto funzionamento di ITSuite.
+
+HTTP://WWW.AMEAMER.COM/ITSUITE
+admin@ameamer.com

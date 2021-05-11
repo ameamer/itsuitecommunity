@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[stampanti] (
+    [Id]                        INT             IDENTITY (1, 1) NOT NULL,
+    [inventario_stampante]      NVARCHAR (MAX)  NULL,
+    [modello_stampante]         NVARCHAR (MAX)  NULL,
+    [numero_serie_stampante]    NVARCHAR (MAX)  NULL,
+    [cartella_stampante]        NVARCHAR (MAX)  NULL,
+    [marca_stampante]           NVARCHAR (MAX)  NULL,
+    [anno_stampante]            NVARCHAR (MAX)  NULL,
+    [inserita_da]               NVARCHAR (MAX)  NULL,
+    [data_inserimento]          NVARCHAR (MAX)  NULL,
+    [ora_inserimento]           NVARCHAR (MAX)  NULL,
+    [presidio_stampante]        NVARCHAR (MAX)  NULL,
+    [reparto_stampante]         NVARCHAR (MAX)  NULL,
+    [padiglione_stampante]      NVARCHAR (MAX)  NULL,
+    [ip_stampante]              NVARCHAR (MAX)  NULL,
+    [stato_stampante]           NVARCHAR (MAX)  NULL,
+    [note_stampante]            NVARCHAR (MAX)  NULL,
+    [ultimamod_stampante]       NVARCHAR (MAX)  NULL,
+    [autoreultimamod_stampante] NVARCHAR (MAX)  NULL,
+    [FileName]                  NVARCHAR (MAX)  NULL,
+    [FileSize]                  NVARCHAR (MAX)  NULL,
+    [ContentType]               NVARCHAR (MAX)  NULL,
+    [BinaryData]                VARBINARY (MAX) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

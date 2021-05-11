@@ -1,0 +1,2433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>PC count</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>Application settings</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>List management</value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>Business software settings</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>Add-Ons</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>Database management</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>Add-Ons</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>No add-ons installed</value>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Current status</value>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>View profile</value>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>Choose the search type to be performed</value>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>Fast search</value>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>Advanced search</value>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value>With the quick search you can search for a certain term within all the database fields.</value>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>Enter the search terms in the box below and start it.</value>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value>Enter the search term</value>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>Advanced search of other hardware</value>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value>Here you can search in advanced way in the database.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Hardware status</value>
+  </data>
+  <data name="String120" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value>Hardware types</value>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value>Serial number</value>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>Inventory number</value>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>Pavilion</value>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>Author of record</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Add new PC</value>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>IP address</value>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>Order of results</value>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>any...</value>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value>Sort results by ID</value>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value>Sort results by brand</value>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>Sort results by model</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Add new printer</value>
+  </data>
+  <data name="String140" xml:space="preserve">
+    <value>Sort results by year</value>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>Sort results by serial number</value>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value>Other hardware details</value>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>Do you really want to delete the selected hardware? The operation is not reversible.</value>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>YES</value>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>This page shows the hardware details</value>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value>No drivers</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Add new hardware</value>
+  </data>
+  <data name="String150" xml:space="preserve">
+    <value>No IP address</value>
+  </data>
+  <data name="String151" xml:space="preserve">
+    <value>No last modification</value>
+  </data>
+  <data name="String152" xml:space="preserve">
+    <value>No image</value>
+  </data>
+  <data name="String153" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="String154" xml:space="preserve">
+    <value>Creation time</value>
+  </data>
+  <data name="String155" xml:space="preserve">
+    <value>Date and time of last modification</value>
+  </data>
+  <data name="String156" xml:space="preserve">
+    <value>Drivers</value>
+  </data>
+  <data name="String157" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="String158" xml:space="preserve">
+    <value>The other hardware list</value>
+  </data>
+  <data name="String159" xml:space="preserve">
+    <value>Here you can see the complete list of all other hardware in the system</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Show LOG</value>
+  </data>
+  <data name="String160" xml:space="preserve">
+    <value>It was not returned any data.</value>
+  </data>
+  <data name="String161" xml:space="preserve">
+    <value>The hardware has been successfully deleted.</value>
+  </data>
+  <data name="String162" xml:space="preserve">
+    <value>User in use</value>
+  </data>
+  <data name="String163" xml:space="preserve">
+    <value>Fields in red are required.</value>
+  </data>
+  <data name="String164" xml:space="preserve">
+    <value>Driver folder</value>
+  </data>
+  <data name="String165" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="String166" xml:space="preserve">
+    <value>The image can be added after insertion.</value>
+  </data>
+  <data name="String167" xml:space="preserve">
+    <value>Log of the other hardware section</value>
+  </data>
+  <data name="String168" xml:space="preserve">
+    <value>On this page you can view the log of the entire section of the other hardware</value>
+  </data>
+  <data name="String169" xml:space="preserve">
+    <value>Edit other hardware</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="String170" xml:space="preserve">
+    <value>Wrong extension</value>
+  </data>
+  <data name="String171" xml:space="preserve">
+    <value>The supported extensions are: .jpg, .jpeg, .png, .gif</value>
+  </data>
+  <data name="String172" xml:space="preserve">
+    <value>No file selected</value>
+  </data>
+  <data name="String173" xml:space="preserve">
+    <value>(In use)</value>
+  </data>
+  <data name="String174" xml:space="preserve">
+    <value>REPORT OTHER HARDWARE CREATED ON</value>
+  </data>
+  <data name="String175" xml:space="preserve">
+    <value>HW Type</value>
+  </data>
+  <data name="String176" xml:space="preserve">
+    <value>SN</value>
+  </data>
+  <data name="String177" xml:space="preserve">
+    <value>Inv. N.</value>
+  </data>
+  <data name="String178" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="String179" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Trouble ticketing status</value>
+  </data>
+  <data name="String180" xml:space="preserve">
+    <value>item</value>
+  </data>
+  <data name="String181" xml:space="preserve">
+    <value>Search result</value>
+  </data>
+  <data name="String182" xml:space="preserve">
+    <value>The results of your search</value>
+  </data>
+  <data name="String183" xml:space="preserve">
+    <value>Here you can manage ITSuite database</value>
+  </data>
+  <data name="String184" xml:space="preserve">
+    <value>Database type</value>
+  </data>
+  <data name="String185" xml:space="preserve">
+    <value>Version in use</value>
+  </data>
+  <data name="String186" xml:space="preserve">
+    <value>Tables count</value>
+  </data>
+  <data name="String187" xml:space="preserve">
+    <value>Connection test successful</value>
+  </data>
+  <data name="String188" xml:space="preserve">
+    <value>Microsoft SQL Server version not recognized</value>
+  </data>
+  <data name="String189" xml:space="preserve">
+    <value>Ticket details</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Open tickets</value>
+  </data>
+  <data name="String190" xml:space="preserve">
+    <value>Ticket n.</value>
+  </data>
+  <data name="String191" xml:space="preserve">
+    <value>Details of the ticket number</value>
+  </data>
+  <data name="String192" xml:space="preserve">
+    <value>Change assignment</value>
+  </data>
+  <data name="String193" xml:space="preserve">
+    <value>Change customer</value>
+  </data>
+  <data name="String194" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="String195" xml:space="preserve">
+    <value>Uploaded files</value>
+  </data>
+  <data name="String196" xml:space="preserve">
+    <value>Ticket updates</value>
+  </data>
+  <data name="String197" xml:space="preserve">
+    <value>Customer updates</value>
+  </data>
+  <data name="String198" xml:space="preserve">
+    <value>Add update</value>
+  </data>
+  <data name="String199" xml:space="preserve">
+    <value>Add a new update to the ticket</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Monitor count</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Pending tickets</value>
+  </data>
+  <data name="String200" xml:space="preserve">
+    <value>Write a note for the update by the buttons below...</value>
+  </data>
+  <data name="String201" xml:space="preserve">
+    <value>Send email with the update details to the customer.</value>
+  </data>
+  <data name="String202" xml:space="preserve">
+    <value>Visible from the customer?</value>
+  </data>
+  <data name="String203" xml:space="preserve">
+    <value>Add notes and reopen if waiting</value>
+  </data>
+  <data name="String204" xml:space="preserve">
+    <value>Pending notes are always visible by customer</value>
+  </data>
+  <data name="String205" xml:space="preserve">
+    <value>Add note and put on hold</value>
+  </data>
+  <data name="String206" xml:space="preserve">
+    <value>Closed tickets are always visible by customer</value>
+  </data>
+  <data name="String207" xml:space="preserve">
+    <value>Add notes and close ticket</value>
+  </data>
+  <data name="String208" xml:space="preserve">
+    <value>Add a new file to the ticket</value>
+  </data>
+  <data name="String209" xml:space="preserve">
+    <value>Write a note to add the file...</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Closed tickets</value>
+  </data>
+  <data name="String210" xml:space="preserve">
+    <value>Add file</value>
+  </data>
+  <data name="String211" xml:space="preserve">
+    <value>Add details</value>
+  </data>
+  <data name="String212" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="String213" xml:space="preserve">
+    <value>The customer has been successfully modified</value>
+  </data>
+  <data name="String214" xml:space="preserve">
+    <value>The ticket has been successfully reassigned to the user</value>
+  </data>
+  <data name="String215" xml:space="preserve">
+    <value>Select the user to assign the ticket from the list below, then select OK:</value>
+  </data>
+  <data name="String216" xml:space="preserve">
+    <value>Select the new customer from the list below, then select OK:</value>
+  </data>
+  <data name="String217" xml:space="preserve">
+    <value>(Not visible by customer) New update posted by:</value>
+  </data>
+  <data name="String218" xml:space="preserve">
+    <value>(Visible by customer) New update posted by:</value>
+  </data>
+  <data name="String219" xml:space="preserve">
+    <value>Closed on </value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>New ticket</value>
+  </data>
+  <data name="String220" xml:space="preserve">
+    <value> from </value>
+  </data>
+  <data name="String221" xml:space="preserve">
+    <value>Select the user to assign the ticket from the list below, then select OK:</value>
+  </data>
+  <data name="String222" xml:space="preserve">
+    <value>New update posted by:</value>
+  </data>
+  <data name="String223" xml:space="preserve">
+    <value>You have not specified any details in the new update. Unable to add.</value>
+  </data>
+  <data name="String224" xml:space="preserve">
+    <value>You already have 4 update notes. You can't add new ones. The ticket must be closed or moved to hold.</value>
+  </data>
+  <data name="String225" xml:space="preserve">
+    <value>You have not entered the file insertion note.</value>
+  </data>
+  <data name="String226" xml:space="preserve">
+    <value>File added on:</value>
+  </data>
+  <data name="String227" xml:space="preserve">
+    <value>(Not visible by customer) File added on:</value>
+  </data>
+  <data name="String228" xml:space="preserve">
+    <value>File name:</value>
+  </data>
+  <data name="String229" xml:space="preserve">
+    <value>Header</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>All tickets</value>
+  </data>
+  <data name="String230" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="String231" xml:space="preserve">
+    <value>Assigned to</value>
+  </data>
+  <data name="String232" xml:space="preserve">
+    <value>Opening date</value>
+  </data>
+  <data name="String233" xml:space="preserve">
+    <value>Opening time</value>
+  </data>
+  <data name="String234" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="String235" xml:space="preserve">
+    <value>Author assignment</value>
+  </data>
+  <data name="String236" xml:space="preserve">
+    <value>Ticket taken over</value>
+  </data>
+  <data name="String237" xml:space="preserve">
+    <value>My tickets</value>
+  </data>
+  <data name="String238" xml:space="preserve">
+    <value>Last update: </value>
+  </data>
+  <data name="String239" xml:space="preserve">
+    <value>Ticket n. (ID)</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>Trouble ticketing servis is deactivated</value>
+  </data>
+  <data name="String240" xml:space="preserve">
+    <value>Date and time opening</value>
+  </data>
+  <data name="String241" xml:space="preserve">
+    <value>Ticket section log</value>
+  </data>
+  <data name="String242" xml:space="preserve">
+    <value>On this page you can view the log of the ticket section</value>
+  </data>
+  <data name="String243" xml:space="preserve">
+    <value>Here you can add a new ticket. Fields in red are required.</value>
+  </data>
+  <data name="String244" xml:space="preserve">
+    <value>(max 250 chars)</value>
+  </data>
+  <data name="String245" xml:space="preserve">
+    <value>Assign to user</value>
+  </data>
+  <data name="String246" xml:space="preserve">
+    <value>Notify e-mail</value>
+  </data>
+  <data name="String247" xml:space="preserve">
+    <value>Send e-mail notification of the ticket opening to the customer</value>
+  </data>
+  <data name="String248" xml:space="preserve">
+    <value>Here you can search for a ticket</value>
+  </data>
+  <data name="String249" xml:space="preserve">
+    <value>Search only for ticket n. (ID)</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Go to</value>
+  </data>
+  <data name="String250" xml:space="preserve">
+    <value>Free search</value>
+  </data>
+  <data name="String251" xml:space="preserve">
+    <value>Start search</value>
+  </data>
+  <data name="String252" xml:space="preserve">
+    <value>The search term in tickets via ID must be a number. To search for an alphanumeric term between tickets, use the free search.</value>
+  </data>
+  <data name="String253" xml:space="preserve">
+    <value>Ticket Search Results</value>
+  </data>
+  <data name="String254" xml:space="preserve">
+    <value>Here are the search results for </value>
+  </data>
+  <data name="String255" xml:space="preserve">
+    <value>Closing date</value>
+  </data>
+  <data name="String256" xml:space="preserve">
+    <value>Closing author</value>
+  </data>
+  <data name="String257" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="String258" xml:space="preserve">
+    <value>Ora</value>
+  </data>
+  <data name="String259" xml:space="preserve">
+    <value>Error. Red fields are required. The new ticket could not be inserted.</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>General settings</value>
+  </data>
+  <data name="String260" xml:space="preserve">
+    <value>Error setting up the customer. Check the data entered and try again.</value>
+  </data>
+  <data name="String261" xml:space="preserve">
+    <value>Before modifying the list databases, make sure that no hardware, PC or printer is connected to them with specific functions</value>
+  </data>
+  <data name="String262" xml:space="preserve">
+    <value>Location lists</value>
+  </data>
+  <data name="String263" xml:space="preserve">
+    <value>Buildings list</value>
+  </data>
+  <data name="String264" xml:space="preserve">
+    <value>Pavilions list</value>
+  </data>
+  <data name="String265" xml:space="preserve">
+    <value>Departments list</value>
+  </data>
+  <data name="String266" xml:space="preserve">
+    <value>PC and monitors list</value>
+  </data>
+  <data name="String267" xml:space="preserve">
+    <value>CPU List</value>
+  </data>
+  <data name="String268" xml:space="preserve">
+    <value>Operating Systems list</value>
+  </data>
+  <data name="String269" xml:space="preserve">
+    <value>PC brands list</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>to activate.</value>
+  </data>
+  <data name="String270" xml:space="preserve">
+    <value>PC type list</value>
+  </data>
+  <data name="String271" xml:space="preserve">
+    <value>Other software</value>
+  </data>
+  <data name="String272" xml:space="preserve">
+    <value>Monitor brands list</value>
+  </data>
+  <data name="String273" xml:space="preserve">
+    <value>Monitor status list</value>
+  </data>
+  <data name="String274" xml:space="preserve">
+    <value>Other hardware and printers list</value>
+  </data>
+  <data name="String275" xml:space="preserve">
+    <value>Other hardware brands list</value>
+  </data>
+  <data name="String276" xml:space="preserve">
+    <value>Hardware types</value>
+  </data>
+  <data name="String277" xml:space="preserve">
+    <value>Printer brands list</value>
+  </data>
+  <data name="String278" xml:space="preserve">
+    <value>Network data lists</value>
+  </data>
+  <data name="String279" xml:space="preserve">
+    <value>Domain lists and network settings</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="String280" xml:space="preserve">
+    <value>Pavilions list management</value>
+  </data>
+  <data name="String281" xml:space="preserve">
+    <value>Here you can manage the general lists of the pavilions</value>
+  </data>
+  <data name="String282" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="String283" xml:space="preserve">
+    <value>Pavilion name</value>
+  </data>
+  <data name="String284" xml:space="preserve">
+    <value>Enter the new pavilion name...</value>
+  </data>
+  <data name="String285" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="String286" xml:space="preserve">
+    <value>Error. Item name empty.</value>
+  </data>
+  <data name="String287" xml:space="preserve">
+    <value>Domains list</value>
+  </data>
+  <data name="String288" xml:space="preserve">
+    <value>Domain list management and other network settings</value>
+  </data>
+  <data name="String289" xml:space="preserve">
+    <value>Here you can manage the general list of domains and other network settings</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Product care requests status</value>
+  </data>
+  <data name="String290" xml:space="preserve">
+    <value>Integrated network services</value>
+  </data>
+  <data name="String291" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="String292" xml:space="preserve">
+    <value>Default IP</value>
+  </data>
+  <data name="String293" xml:space="preserve">
+    <value>Alternative IP</value>
+  </data>
+  <data name="String294" xml:space="preserve">
+    <value>Enter new deafult IP...</value>
+  </data>
+  <data name="String295" xml:space="preserve">
+    <value>Enter new alternative IP...</value>
+  </data>
+  <data name="String296" xml:space="preserve">
+    <value>Enter new default subnet mask...</value>
+  </data>
+  <data name="String297" xml:space="preserve">
+    <value>Default subnet mask</value>
+  </data>
+  <data name="String298" xml:space="preserve">
+    <value>Alternative subnet mask</value>
+  </data>
+  <data name="String299" xml:space="preserve">
+    <value>Default gateway</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Printers count</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Open requests</value>
+  </data>
+  <data name="String300" xml:space="preserve">
+    <value>Alternative gateway</value>
+  </data>
+  <data name="String301" xml:space="preserve">
+    <value>Insert new alternative subnet mask...</value>
+  </data>
+  <data name="String302" xml:space="preserve">
+    <value>Enter new default gateway...</value>
+  </data>
+  <data name="String303" xml:space="preserve">
+    <value>Enter new alternative gateway...</value>
+  </data>
+  <data name="String304" xml:space="preserve">
+    <value>Default DNS Prim.</value>
+  </data>
+  <data name="String305" xml:space="preserve">
+    <value>Alternative DNS Prim.</value>
+  </data>
+  <data name="String306" xml:space="preserve">
+    <value>Default DNS Sec.</value>
+  </data>
+  <data name="String307" xml:space="preserve">
+    <value>Alternative DNS Sec.</value>
+  </data>
+  <data name="String308" xml:space="preserve">
+    <value>Enter new default primary dns...</value>
+  </data>
+  <data name="String309" xml:space="preserve">
+    <value>Enter new alternative dns...</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Closed requests</value>
+  </data>
+  <data name="String310" xml:space="preserve">
+    <value>Enter new default secondary dns...</value>
+  </data>
+  <data name="String311" xml:space="preserve">
+    <value>Enter new alternative secondary dns...</value>
+  </data>
+  <data name="String312" xml:space="preserve">
+    <value>Default WINS</value>
+  </data>
+  <data name="String313" xml:space="preserve">
+    <value>Alternative WINS</value>
+  </data>
+  <data name="String314" xml:space="preserve">
+    <value>Enter new default WINS...</value>
+  </data>
+  <data name="String315" xml:space="preserve">
+    <value>Enter new alternative WINS...</value>
+  </data>
+  <data name="String316" xml:space="preserve">
+    <value>Default connection</value>
+  </data>
+  <data name="String317" xml:space="preserve">
+    <value>Enter new default LAN connection...</value>
+  </data>
+  <data name="String318" xml:space="preserve">
+    <value>Alternative connection</value>
+  </data>
+  <data name="String319" xml:space="preserve">
+    <value>Enter new alternative LAN connection...</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>New care request</value>
+  </data>
+  <data name="String320" xml:space="preserve">
+    <value>Domain names management</value>
+  </data>
+  <data name="String321" xml:space="preserve">
+    <value>Enter the new domain name...</value>
+  </data>
+  <data name="String322" xml:space="preserve">
+    <value>Domain name</value>
+  </data>
+  <data name="String323" xml:space="preserve">
+    <value>Hardware brands list management</value>
+  </data>
+  <data name="String324" xml:space="preserve">
+    <value>Here you can manage the general list of hardware brands</value>
+  </data>
+  <data name="String325" xml:space="preserve">
+    <value>Enter the new hardware brand...</value>
+  </data>
+  <data name="String326" xml:space="preserve">
+    <value>Monitor brands list management</value>
+  </data>
+  <data name="String327" xml:space="preserve">
+    <value>Here you can manage the general lists of monitor brands</value>
+  </data>
+  <data name="String328" xml:space="preserve">
+    <value>Enter the name of the new monitor brand...</value>
+  </data>
+  <data name="String329" xml:space="preserve">
+    <value>PC brands list management</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Show all</value>
+  </data>
+  <data name="String330" xml:space="preserve">
+    <value>Here you can manage the general lists of PC brands</value>
+  </data>
+  <data name="String331" xml:space="preserve">
+    <value>Enter the name of the new PC brand...</value>
+  </data>
+  <data name="String332" xml:space="preserve">
+    <value>Printer brands management</value>
+  </data>
+  <data name="String333" xml:space="preserve">
+    <value>Here you can manage the general lists of printer brands</value>
+  </data>
+  <data name="String334" xml:space="preserve">
+    <value>Enter the name of the new printer brand...</value>
+  </data>
+  <data name="String335" xml:space="preserve">
+    <value>Other software management</value>
+  </data>
+  <data name="String336" xml:space="preserve">
+    <value>Here you can manage the general lists of other software</value>
+  </data>
+  <data name="String337" xml:space="preserve">
+    <value>Enter new software name...</value>
+  </data>
+  <data name="String338" xml:space="preserve">
+    <value>Other SW</value>
+  </data>
+  <data name="String339" xml:space="preserve">
+    <value>Enter the name of the new building...</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Product care requests service is deactivated.</value>
+  </data>
+  <data name="String340" xml:space="preserve">
+    <value>Bulding list management</value>
+  </data>
+  <data name="String341" xml:space="preserve">
+    <value>Here you can manage the general lists of buildings</value>
+  </data>
+  <data name="String342" xml:space="preserve">
+    <value>CPU list management</value>
+  </data>
+  <data name="String343" xml:space="preserve">
+    <value>Here you can manage the general lists of CPU</value>
+  </data>
+  <data name="String344" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="String345" xml:space="preserve">
+    <value>Enter new CPU name...</value>
+  </data>
+  <data name="String346" xml:space="preserve">
+    <value>Department list management</value>
+  </data>
+  <data name="String347" xml:space="preserve">
+    <value>Here you can manage the general lists of departments</value>
+  </data>
+  <data name="String348" xml:space="preserve">
+    <value>Enter new department name...</value>
+  </data>
+  <data name="String349" xml:space="preserve">
+    <value>Operating systems list management</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Users status</value>
+  </data>
+  <data name="String350" xml:space="preserve">
+    <value>Here you can manage the general lists of Operating Systems</value>
+  </data>
+  <data name="String351" xml:space="preserve">
+    <value>Operating System</value>
+  </data>
+  <data name="String352" xml:space="preserve">
+    <value>Monitor status list management</value>
+  </data>
+  <data name="String353" xml:space="preserve">
+    <value>Here you can manage the general lists of monitor status</value>
+  </data>
+  <data name="String354" xml:space="preserve">
+    <value>Enter name of new monitor status...</value>
+  </data>
+  <data name="String355" xml:space="preserve">
+    <value>Hardware name</value>
+  </data>
+  <data name="String356" xml:space="preserve">
+    <value>Enter name of new hardware type...</value>
+  </data>
+  <data name="String357" xml:space="preserve">
+    <value>Hardware type list management</value>
+  </data>
+  <data name="String358" xml:space="preserve">
+    <value>Here you can manage the general lists of hardware types</value>
+  </data>
+  <data name="String359" xml:space="preserve">
+    <value>PC brand list management</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Users count</value>
+  </data>
+  <data name="String360" xml:space="preserve">
+    <value>Here you can manage the general lists of PC brands</value>
+  </data>
+  <data name="String361" xml:space="preserve">
+    <value>Enter new pc type name...</value>
+  </data>
+  <data name="String362" xml:space="preserve">
+    <value>Enter new Operating System name...</value>
+  </data>
+  <data name="String363" xml:space="preserve">
+    <value>PC search result</value>
+  </data>
+  <data name="String364" xml:space="preserve">
+    <value>PC search result (order by: </value>
+  </data>
+  <data name="String365" xml:space="preserve">
+    <value>Found items:</value>
+  </data>
+  <data name="String366" xml:space="preserve">
+    <value>PC Name</value>
+  </data>
+  <data name="String367" xml:space="preserve">
+    <value>Create report</value>
+  </data>
+  <data name="String368" xml:space="preserve">
+    <value>No inventory number</value>
+  </data>
+  <data name="String369" xml:space="preserve">
+    <value>PC and monitor details</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>New user</value>
+  </data>
+  <data name="String370" xml:space="preserve">
+    <value>PC and monitor details page</value>
+  </data>
+  <data name="String371" xml:space="preserve">
+    <value>Connected monitor</value>
+  </data>
+  <data name="String372" xml:space="preserve">
+    <value>Inch</value>
+  </data>
+  <data name="String373" xml:space="preserve">
+    <value>Connected printer</value>
+  </data>
+  <data name="String374" xml:space="preserve">
+    <value>open printer details</value>
+  </data>
+  <data name="String375" xml:space="preserve">
+    <value>Other hardware connected</value>
+  </data>
+  <data name="String376" xml:space="preserve">
+    <value>PC Domain</value>
+  </data>
+  <data name="String377" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="String378" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="String379" xml:space="preserve">
+    <value>Floor</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Database status</value>
+  </data>
+  <data name="String380" xml:space="preserve">
+    <value>With private software?</value>
+  </data>
+  <data name="String381" xml:space="preserve">
+    <value>open other hardware details</value>
+  </data>
+  <data name="String382" xml:space="preserve">
+    <value>Choose the type of search to be performed</value>
+  </data>
+  <data name="String383" xml:space="preserve">
+    <value>PC Name and domain</value>
+  </data>
+  <data name="String384" xml:space="preserve">
+    <value>Enter machine name</value>
+  </data>
+  <data name="String385" xml:space="preserve">
+    <value>Enter model</value>
+  </data>
+  <data name="String386" xml:space="preserve">
+    <value>Enter S/N</value>
+  </data>
+  <data name="String387" xml:space="preserve">
+    <value>Enter inventory number</value>
+  </data>
+  <data name="String388" xml:space="preserve">
+    <value>Enter ID</value>
+  </data>
+  <data name="String389" xml:space="preserve">
+    <value>Enter IP</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>Database usage</value>
+  </data>
+  <data name="String390" xml:space="preserve">
+    <value>Enter RAM</value>
+  </data>
+  <data name="String391" xml:space="preserve">
+    <value>Enter notes</value>
+  </data>
+  <data name="String392" xml:space="preserve">
+    <value>Monitor brand</value>
+  </data>
+  <data name="String393" xml:space="preserve">
+    <value>Monitor inventory number</value>
+  </data>
+  <data name="String394" xml:space="preserve">
+    <value>Monitor serial number</value>
+  </data>
+  <data name="String395" xml:space="preserve">
+    <value>Monitor year</value>
+  </data>
+  <data name="String396" xml:space="preserve">
+    <value>Monitor status</value>
+  </data>
+  <data name="String397" xml:space="preserve">
+    <value>Enter monitor S/N</value>
+  </data>
+  <data name="String398" xml:space="preserve">
+    <value>Enter monitor inventory number</value>
+  </data>
+  <data name="String399" xml:space="preserve">
+    <value>Sort results by inventory</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Other hardware count</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Database manager</value>
+  </data>
+  <data name="String400" xml:space="preserve">
+    <value>Sort results by name</value>
+  </data>
+  <data name="String401" xml:space="preserve">
+    <value>Sort results by IP address</value>
+  </data>
+  <data name="String402" xml:space="preserve">
+    <value>Add PC</value>
+  </data>
+  <data name="String403" xml:space="preserve">
+    <value>Select printer</value>
+  </data>
+  <data name="String404" xml:space="preserve">
+    <value>Select hardware</value>
+  </data>
+  <data name="String405" xml:space="preserve">
+    <value>You can upload the image after inserting the PC into the system.</value>
+  </data>
+  <data name="String406" xml:space="preserve">
+    <value>Monitor List connected to PCs</value>
+  </data>
+  <data name="String407" xml:space="preserve">
+    <value>Here you can see the list of all the monitors connected to the PCs in the system</value>
+  </data>
+  <data name="String408" xml:space="preserve">
+    <value>The PC has been successfully deleted.</value>
+  </data>
+  <data name="String409" xml:space="preserve">
+    <value>Here you can see the list of all the PCs in the system</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Edit user data</value>
+  </data>
+  <data name="String410" xml:space="preserve">
+    <value>Extension not supported</value>
+  </data>
+  <data name="String411" xml:space="preserve">
+    <value>The supported extensions are:</value>
+  </data>
+  <data name="String412" xml:space="preserve">
+    <value>File was uploaded succesfully</value>
+  </data>
+  <data name="String413" xml:space="preserve">
+    <value>The file has been deleted</value>
+  </data>
+  <data name="String414" xml:space="preserve">
+    <value>Edit PC</value>
+  </data>
+  <data name="String415" xml:space="preserve">
+    <value>(In Use) No value</value>
+  </data>
+  <data name="String416" xml:space="preserve">
+    <value>Delete value</value>
+  </data>
+  <data name="String417" xml:space="preserve">
+    <value>ERROR! A PC model with the same serial number, model and brand has been detected or incorrect data has been entered. Unable to continue, change PC data. Press OK to go back.</value>
+  </data>
+  <data name="String418" xml:space="preserve">
+    <value>PC Report</value>
+  </data>
+  <data name="String419" xml:space="preserve">
+    <value>PC REPORT CREATED ON</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Password reset</value>
+  </data>
+  <data name="String420" xml:space="preserve">
+    <value>Domain name\PC name</value>
+  </data>
+  <data name="String421" xml:space="preserve">
+    <value>SN</value>
+  </data>
+  <data name="String422" xml:space="preserve">
+    <value>Inv. N.</value>
+  </data>
+  <data name="String423" xml:space="preserve">
+    <value>Op. System</value>
+  </data>
+  <data name="String424" xml:space="preserve">
+    <value>Private sw</value>
+  </data>
+  <data name="String425" xml:space="preserve">
+    <value>Monitor inv. n.</value>
+  </data>
+  <data name="String426" xml:space="preserve">
+    <value>Monitor SN</value>
+  </data>
+  <data name="String427" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="String428" xml:space="preserve">
+    <value>Monitor model</value>
+  </data>
+  <data name="String429" xml:space="preserve">
+    <value>Monitor notes</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Your password</value>
+  </data>
+  <data name="String430" xml:space="preserve">
+    <value>Log empty.</value>
+  </data>
+  <data name="String431" xml:space="preserve">
+    <value>LOG of PC and Monitor section</value>
+  </data>
+  <data name="String432" xml:space="preserve">
+    <value>On this page you can view the log of the PC and Monitor section</value>
+  </data>
+  <data name="String433" xml:space="preserve">
+    <value>Printer details</value>
+  </data>
+  <data name="String434" xml:space="preserve">
+    <value>In this page you can see the printer details</value>
+  </data>
+  <data name="String435" xml:space="preserve">
+    <value>The printer has been successfully deleted.</value>
+  </data>
+  <data name="String436" xml:space="preserve">
+    <value>Here you can see the list of all printers</value>
+  </data>
+  <data name="String437" xml:space="preserve">
+    <value>Add printer</value>
+  </data>
+  <data name="String438" xml:space="preserve">
+    <value>Printer section LOG</value>
+  </data>
+  <data name="String439" xml:space="preserve">
+    <value>In this page you can see the log of printer section</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Enter the new user password</value>
+  </data>
+  <data name="String440" xml:space="preserve">
+    <value>Edit printer</value>
+  </data>
+  <data name="String441" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="String442" xml:space="preserve">
+    <value>Printers report</value>
+  </data>
+  <data name="String443" xml:space="preserve">
+    <value>PRINTERS REPORT CREATED ON</value>
+  </data>
+  <data name="String444" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="String445" xml:space="preserve">
+    <value>Here you can search printers in advanced way</value>
+  </data>
+  <data name="String446" xml:space="preserve">
+    <value>Enter driver folder</value>
+  </data>
+  <data name="String447" xml:space="preserve">
+    <value>Here you can see the your search results</value>
+  </data>
+  <data name="String448" xml:space="preserve">
+    <value>Enter ID</value>
+  </data>
+  <data name="String449" xml:space="preserve">
+    <value>ERROR, YOU CAN NOT ENTER EMPTY FIELDS OF THE MODEL AND SERIAL NUMBER!</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Re-enter the new user password</value>
+  </data>
+  <data name="String450" xml:space="preserve">
+    <value>Select OK to go back.</value>
+  </data>
+  <data name="String451" xml:space="preserve">
+    <value>ERROR! Printer with same serial number, model and brand has been detected or incorrect data has been entered. Unable to continue, edit printer data. Press OK to go back.</value>
+  </data>
+  <data name="String452" xml:space="preserve">
+    <value>ERROR! Fields with red background are mandatory. Unable to continue, edit data. Press OK to go back.</value>
+  </data>
+  <data name="String453" xml:space="preserve">
+    <value>ERROR! Hardware detected with the same serial number, model and brand or incorrect data has been entered. Unable to continue, edit hardware data. Press OK to go back.</value>
+  </data>
+  <data name="String454" xml:space="preserve">
+    <value>OTHER HW REPORT CREATED ON</value>
+  </data>
+  <data name="String455" xml:space="preserve">
+    <value>Other hardware report</value>
+  </data>
+  <data name="String456" xml:space="preserve">
+    <value>User management (customers)</value>
+  </data>
+  <data name="String457" xml:space="preserve">
+    <value>All users</value>
+  </data>
+  <data name="String458" xml:space="preserve">
+    <value>System users</value>
+  </data>
+  <data name="String459" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="String460" xml:space="preserve">
+    <value>Here you can see and manage the customer users</value>
+  </data>
+  <data name="String461" xml:space="preserve">
+    <value>Here you can view, consult and manage the list of users</value>
+  </data>
+  <data name="String462" xml:space="preserve">
+    <value>User management (system users)</value>
+  </data>
+  <data name="String463" xml:space="preserve">
+    <value>Here you can view, consult and manage the system users</value>
+  </data>
+  <data name="String464" xml:space="preserve">
+    <value>User section LOG</value>
+  </data>
+  <data name="String465" xml:space="preserve">
+    <value>On this page you can view the log of the user section</value>
+  </data>
+  <data name="String466" xml:space="preserve">
+    <value>Here you can edit the details of user with ID</value>
+  </data>
+  <data name="String467" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="String468" xml:space="preserve">
+    <value>Ticketing technician</value>
+  </data>
+  <data name="String469" xml:space="preserve">
+    <value>It is not possible to change the type of a user type "Customer".</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="String470" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="String471" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="String472" xml:space="preserve">
+    <value>Do you want to delete the image?</value>
+  </data>
+  <data name="String473" xml:space="preserve">
+    <value>The file must have a jpg extension.</value>
+  </data>
+  <data name="String474" xml:space="preserve">
+    <value>Error, it is not possible to set the database name tab_general to Administrators or ticketing users.</value>
+  </data>
+  <data name="String475" xml:space="preserve">
+    <value>Error, the database name already exists. Choose another database name and try again.</value>
+  </data>
+  <data name="String476" xml:space="preserve">
+    <value>Error, username already exists. Choose another username and try again.</value>
+  </data>
+  <data name="String477" xml:space="preserve">
+    <value>Error, invalid database name (tab_).</value>
+  </data>
+  <data name="String478" xml:space="preserve">
+    <value>Error, the password must be at least 8 characters.</value>
+  </data>
+  <data name="String479" xml:space="preserve">
+    <value>Error, the two new passwords do not match.</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="String480" xml:space="preserve">
+    <value>Here you can add a new user</value>
+  </data>
+  <data name="String481" xml:space="preserve">
+    <value>Password (minimum 8 characters)</value>
+  </data>
+  <data name="String482" xml:space="preserve">
+    <value>Re-enter password</value>
+  </data>
+  <data name="String483" xml:space="preserve">
+    <value>The ID search term must be a number. To search an user for an alphanumeric term, use the free search.</value>
+  </data>
+  <data name="String484" xml:space="preserve">
+    <value>Here you can search for an ITSuite user</value>
+  </data>
+  <data name="String485" xml:space="preserve">
+    <value>Search only by ID</value>
+  </data>
+  <data name="String486" xml:space="preserve">
+    <value>Here you can view the search results</value>
+  </data>
+  <data name="String487" xml:space="preserve">
+    <value>I am shutting down the remote PC</value>
+  </data>
+  <data name="String488" xml:space="preserve">
+    <value>Shutdown type</value>
+  </data>
+  <data name="String489" xml:space="preserve">
+    <value>Remote PC IP address</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="String490" xml:space="preserve">
+    <value>Remote PC Operating System</value>
+  </data>
+  <data name="String491" xml:space="preserve">
+    <value>Unable to open PowerShell. Check the security settings of Internet Explorer, in particular to allow unsigned ActiveX. Details: </value>
+  </data>
+  <data name="String492" xml:space="preserve">
+    <value>All data is mandatory. Press OK to go back.</value>
+  </data>
+  <data name="String493" xml:space="preserve">
+    <value>Shutting down remote PC...</value>
+  </data>
+  <data name="String494" xml:space="preserve">
+    <value>Shut down a remote PC</value>
+  </data>
+  <data name="String495" xml:space="preserve">
+    <value>Selected Operating System: Windows Vista/7/8/10/Server 2008 +</value>
+  </data>
+  <data name="String496" xml:space="preserve">
+    <value>Selected operating system: Windows XP</value>
+  </data>
+  <data name="String497" xml:space="preserve">
+    <value>PCname\\administrator</value>
+  </data>
+  <data name="String498" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="String499" xml:space="preserve">
+    <value>Shut down the machine</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>The login details are incorrect. Please, try again.</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="String500" xml:space="preserve">
+    <value>Restart the machine</value>
+  </data>
+  <data name="String501" xml:space="preserve">
+    <value>IP of the remote PC</value>
+  </data>
+  <data name="String502" xml:space="preserve">
+    <value>Change IP of this machine</value>
+  </data>
+  <data name="String503" xml:space="preserve">
+    <value>ITSuite - Change IP address of this PC</value>
+  </data>
+  <data name="String504" xml:space="preserve">
+    <value>New IP address of this PC</value>
+  </data>
+  <data name="String505" xml:space="preserve">
+    <value>Opening Powershell...</value>
+  </data>
+  <data name="String506" xml:space="preserve">
+    <value>Applying network settings to PC...</value>
+  </data>
+  <data name="String507" xml:space="preserve">
+    <value>Enter the new IP settings for your PC in the fields below</value>
+  </data>
+  <data name="String508" xml:space="preserve">
+    <value>Connection name</value>
+  </data>
+  <data name="String509" xml:space="preserve">
+    <value>New IP address</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="String510" xml:space="preserve">
+    <value>Subnet mask</value>
+  </data>
+  <data name="String511" xml:space="preserve">
+    <value>Gateway</value>
+  </data>
+  <data name="String512" xml:space="preserve">
+    <value>Primary DNS</value>
+  </data>
+  <data name="String513" xml:space="preserve">
+    <value>Alternative DNS</value>
+  </data>
+  <data name="String514" xml:space="preserve">
+    <value>WINS server</value>
+  </data>
+  <data name="String515" xml:space="preserve">
+    <value>DHCP</value>
+  </data>
+  <data name="String516" xml:space="preserve">
+    <value>Change routes on this machine</value>
+  </data>
+  <data name="String517" xml:space="preserve">
+    <value>Enter the route data to be set on this machine</value>
+  </data>
+  <data name="String518" xml:space="preserve">
+    <value>IP of the new ROUTE</value>
+  </data>
+  <data name="String519" xml:space="preserve">
+    <value>Subnet mask of the new ROUTE</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Application language</value>
+  </data>
+  <data name="String520" xml:space="preserve">
+    <value>Gateway of the new ROUTE</value>
+  </data>
+  <data name="String521" xml:space="preserve">
+    <value>Make the route permanent</value>
+  </data>
+  <data name="String522" xml:space="preserve">
+    <value>ITSuite - Change ROUTE of this PC</value>
+  </data>
+  <data name="String523" xml:space="preserve">
+    <value>Change route of a remote machine</value>
+  </data>
+  <data name="String524" xml:space="preserve">
+    <value>ITSuite - Change route of a remote PC</value>
+  </data>
+  <data name="String525" xml:space="preserve">
+    <value>Permanent route</value>
+  </data>
+  <data name="String526" xml:space="preserve">
+    <value>Connection to remote machine</value>
+  </data>
+  <data name="String527" xml:space="preserve">
+    <value>ITSuite - Connection to remote machine</value>
+  </data>
+  <data name="String528" xml:space="preserve">
+    <value>Connection app</value>
+  </data>
+  <data name="String529" xml:space="preserve">
+    <value>Starting remote connection using</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>User serial number</value>
+  </data>
+  <data name="String530" xml:space="preserve">
+    <value>Remote Desktop (Microsoft)</value>
+  </data>
+  <data name="String531" xml:space="preserve">
+    <value>DameWare</value>
+  </data>
+  <data name="String532" xml:space="preserve">
+    <value>Windows Vista +</value>
+  </data>
+  <data name="String533" xml:space="preserve">
+    <value>Windows XP</value>
+  </data>
+  <data name="String534" xml:space="preserve">
+    <value>Change IP of a remote machine</value>
+  </data>
+  <data name="String535" xml:space="preserve">
+    <value>ITSuite - Change IP of a remote machine</value>
+  </data>
+  <data name="String536" xml:space="preserve">
+    <value>Ping from server</value>
+  </data>
+  <data name="String537" xml:space="preserve">
+    <value>No IP entered</value>
+  </data>
+  <data name="String538" xml:space="preserve">
+    <value>Ping from server result</value>
+  </data>
+  <data name="String539" xml:space="preserve">
+    <value>Ping from server to IP address </value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>User details</value>
+  </data>
+  <data name="String540" xml:space="preserve">
+    <value>Error writing ping file (0x009)</value>
+  </data>
+  <data name="String541" xml:space="preserve">
+    <value>Tracert from server to IP address </value>
+  </data>
+  <data name="String542" xml:space="preserve">
+    <value>Error writing tracert file (0x011)</value>
+  </data>
+  <data name="String543" xml:space="preserve">
+    <value>Tracert from server</value>
+  </data>
+  <data name="String544" xml:space="preserve">
+    <value>Tracert from server result</value>
+  </data>
+  <data name="String545" xml:space="preserve">
+    <value>Delete route from a remote machine</value>
+  </data>
+  <data name="String546" xml:space="preserve">
+    <value>ITSuite - Deleting route from a remote machine</value>
+  </data>
+  <data name="String547" xml:space="preserve">
+    <value>View current routes</value>
+  </data>
+  <data name="String548" xml:space="preserve">
+    <value>Change current routes</value>
+  </data>
+  <data name="String549" xml:space="preserve">
+    <value>IP address of the route to delete</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>User database</value>
+  </data>
+  <data name="String550" xml:space="preserve">
+    <value>Remote PC information</value>
+  </data>
+  <data name="String551" xml:space="preserve">
+    <value>ITSuite - Remote PC information</value>
+  </data>
+  <data name="String552" xml:space="preserve">
+    <value>Showing PC information...</value>
+  </data>
+  <data name="String553" xml:space="preserve">
+    <value>View information from a remote PC</value>
+  </data>
+  <data name="String554" xml:space="preserve">
+    <value>Could not start operation. This only works with Internet Explorer. Check the activation of ActiveX in Internet Explorer and try again.</value>
+  </data>
+  <data name="String555" xml:space="preserve">
+    <value>Delete current route</value>
+  </data>
+  <data name="String556" xml:space="preserve">
+    <value>Select network service (** = works only with Internet Explorer)</value>
+  </data>
+  <data name="String557" xml:space="preserve">
+    <value>Select the Operating System of the Remote PC</value>
+  </data>
+  <data name="String558" xml:space="preserve">
+    <value>Manage Windows Firewall of a remote PC</value>
+  </data>
+  <data name="String559" xml:space="preserve">
+    <value>Server services **</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>Created by </value>
+  </data>
+  <data name="String560" xml:space="preserve">
+    <value>Windows Firewall settings **</value>
+  </data>
+  <data name="String561" xml:space="preserve">
+    <value>Select the operating system of your PC</value>
+  </data>
+  <data name="String562" xml:space="preserve">
+    <value>Activate Windows Firewall</value>
+  </data>
+  <data name="String563" xml:space="preserve">
+    <value>Turn off Windows Firewall</value>
+  </data>
+  <data name="String564" xml:space="preserve">
+    <value>Reset Windows Firewall</value>
+  </data>
+  <data name="String565" xml:space="preserve">
+    <value>Disable Windows Firewall service</value>
+  </data>
+  <data name="String566" xml:space="preserve">
+    <value>Enable Windows Firewall Service</value>
+  </data>
+  <data name="String567" xml:space="preserve">
+    <value>Change IP **</value>
+  </data>
+  <data name="String568" xml:space="preserve">
+    <value>Enter the IP address to ping from Server then select the Ping button</value>
+  </data>
+  <data name="String569" xml:space="preserve">
+    <value>Enter the IP address to be tracked by the Server then select the Tracert button</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>User location</value>
+  </data>
+  <data name="String570" xml:space="preserve">
+    <value>Routes management **</value>
+  </data>
+  <data name="String571" xml:space="preserve">
+    <value>Telnet service **</value>
+  </data>
+  <data name="String572" xml:space="preserve">
+    <value>Edit hosts file **</value>
+  </data>
+  <data name="String573" xml:space="preserve">
+    <value>ITSuite - Starting the connection via Telnet</value>
+  </data>
+  <data name="String574" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="String575" xml:space="preserve">
+    <value>Opening Telnet...</value>
+  </data>
+  <data name="String576" xml:space="preserve">
+    <value>Do you want to activate Windows Firewall on your PC (OS selected: Windows XP)?</value>
+  </data>
+  <data name="String577" xml:space="preserve">
+    <value>Do you want to activate Windows Firewall on your PC (OS selected: Windows Vista +)?</value>
+  </data>
+  <data name="String578" xml:space="preserve">
+    <value>Do you want to disable Windows Firewall on your PC (OS selected: Windows XP)?</value>
+  </data>
+  <data name="String579" xml:space="preserve">
+    <value>Do you want to disable Windows Firewall on your PC (OS selected: Windows Vista +)?</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="String580" xml:space="preserve">
+    <value>Do you want to reset Windows Firewall on your PC (OS selected: Windows XP)?</value>
+  </data>
+  <data name="String581" xml:space="preserve">
+    <value>Do you want to reset Windows Firewall on your PC (OS selected: Windows Vista +)?</value>
+  </data>
+  <data name="String582" xml:space="preserve">
+    <value>Do you want to disable the Windows Firewall service on your PC (OS selected: Windows XP)?</value>
+  </data>
+  <data name="String583" xml:space="preserve">
+    <value>Do you want to disable the Windows Firewall service on your PC (OS selected: Windows Vista +)?</value>
+  </data>
+  <data name="String584" xml:space="preserve">
+    <value>Do you want to activate the Windows Firewall service on your PC (OS selected: Windows XP)?</value>
+  </data>
+  <data name="String585" xml:space="preserve">
+    <value>Do you want to activate the Windows Firewall service on your PC (OS selected: Windows Vista +)?</value>
+  </data>
+  <data name="String586" xml:space="preserve">
+    <value>ITSuite - Manage Windows Firewall of a remote PC</value>
+  </data>
+  <data name="String587" xml:space="preserve">
+    <value>Manage Windows Firewall of a remote PC</value>
+  </data>
+  <data name="String588" xml:space="preserve">
+    <value>Type of operation to be performed</value>
+  </data>
+  <data name="String589" xml:space="preserve">
+    <value>Starting operations on the Windows Firewall of the remote PC...</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Creation time</value>
+  </data>
+  <data name="String590" xml:space="preserve">
+    <value>Operation to do</value>
+  </data>
+  <data name="String591" xml:space="preserve">
+    <value>Disable the service</value>
+  </data>
+  <data name="String592" xml:space="preserve">
+    <value>Enable the service</value>
+  </data>
+  <data name="String593" xml:space="preserve">
+    <value>Disable only firewall</value>
+  </data>
+  <data name="String594" xml:space="preserve">
+    <value>Enable only firewall</value>
+  </data>
+  <data name="String595" xml:space="preserve">
+    <value>Firewall reset</value>
+  </data>
+  <data name="String596" xml:space="preserve">
+    <value>Enter the IP address and the destination port to connect via Telnet</value>
+  </data>
+  <data name="String597" xml:space="preserve">
+    <value>Windows Services (only with Internet Explorer with ActiveX active)</value>
+  </data>
+  <data name="String598" xml:space="preserve">
+    <value>Select the Windows service from the list below to start it</value>
+  </data>
+  <data name="String599" xml:space="preserve">
+    <value>Open Control Panel</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>User is not enabled. Contact the administrator.</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>User notes</value>
+  </data>
+  <data name="String600" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="String601" xml:space="preserve">
+    <value>Open the system troubleshooting settings</value>
+  </data>
+  <data name="String602" xml:space="preserve">
+    <value>Troubleshooting</value>
+  </data>
+  <data name="String603" xml:space="preserve">
+    <value>Start the Remote Desktop Connection</value>
+  </data>
+  <data name="String604" xml:space="preserve">
+    <value>Remote Desktop</value>
+  </data>
+  <data name="String605" xml:space="preserve">
+    <value>Check applications when the system starts</value>
+  </data>
+  <data name="String606" xml:space="preserve">
+    <value>Applications on startup</value>
+  </data>
+  <data name="String607" xml:space="preserve">
+    <value>Open Powershell</value>
+  </data>
+  <data name="String608" xml:space="preserve">
+    <value>Powershell</value>
+  </data>
+  <data name="String609" xml:space="preserve">
+    <value>Starts the Windows Network Folder Sharing tool.</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>User status</value>
+  </data>
+  <data name="String610" xml:space="preserve">
+    <value>System performance monitor</value>
+  </data>
+  <data name="String611" xml:space="preserve">
+    <value>Open the Registry Editor.</value>
+  </data>
+  <data name="String612" xml:space="preserve">
+    <value>System Registry</value>
+  </data>
+  <data name="String613" xml:space="preserve">
+    <value>Start Windows System Restore.</value>
+  </data>
+  <data name="String614" xml:space="preserve">
+    <value>System restore</value>
+  </data>
+  <data name="String615" xml:space="preserve">
+    <value>Start International Options.</value>
+  </data>
+  <data name="String616" xml:space="preserve">
+    <value>International system options</value>
+  </data>
+  <data name="String617" xml:space="preserve">
+    <value>Start Task Manager.</value>
+  </data>
+  <data name="String618" xml:space="preserve">
+    <value>Task Manager</value>
+  </data>
+  <data name="String619" xml:space="preserve">
+    <value>Shuts down the PC in about 2 minutes.</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Here you can show the details of user with </value>
+  </data>
+  <data name="String620" xml:space="preserve">
+    <value>Turn off PC</value>
+  </data>
+  <data name="String621" xml:space="preserve">
+    <value>Share folder</value>
+  </data>
+  <data name="String622" xml:space="preserve">
+    <value>The list of links to applications and other sites</value>
+  </data>
+  <data name="String623" xml:space="preserve">
+    <value>Select printer...</value>
+  </data>
+  <data name="String624" xml:space="preserve">
+    <value>Select other hardware...</value>
+  </data>
+  <data name="String625" xml:space="preserve">
+    <value>Choose the ticket technician</value>
+  </data>
+  <data name="String626" xml:space="preserve">
+    <value>Choose the ticket technician...</value>
+  </data>
+  <data name="String627" xml:space="preserve">
+    <value>Choose customer</value>
+  </data>
+  <data name="String628" xml:space="preserve">
+    <value>Choose customer...</value>
+  </data>
+  <data name="String629" xml:space="preserve">
+    <value>Here you can manage the app settings</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>Reset password of user</value>
+  </data>
+  <data name="String630" xml:space="preserve">
+    <value>ITSuite server</value>
+  </data>
+  <data name="String631" xml:space="preserve">
+    <value>By not entering the server address, ITSuite may not work properly, especially in the e-mail notification service. Also make sure to insert the final slash (/).</value>
+  </data>
+  <data name="String632" xml:space="preserve">
+    <value>User settings</value>
+  </data>
+  <data name="String633" xml:space="preserve">
+    <value>Enable ticketing technicians</value>
+  </data>
+  <data name="String634" xml:space="preserve">
+    <value>Enter the ITSuite server address ...</value>
+  </data>
+  <data name="String635" xml:space="preserve">
+    <value>Enable ticketing technicians to complete hardware management</value>
+  </data>
+  <data name="String636" xml:space="preserve">
+    <value>Enable ticketing technicians to completely manage the requests for assistance</value>
+  </data>
+  <data name="String637" xml:space="preserve">
+    <value>IT Service settings</value>
+  </data>
+  <data name="String638" xml:space="preserve">
+    <value>Enable ticket management</value>
+  </data>
+  <data name="String639" xml:space="preserve">
+    <value>Enable business software</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>Last modified author</value>
+  </data>
+  <data name="String640" xml:space="preserve">
+    <value>Enable Product Support</value>
+  </data>
+  <data name="String641" xml:space="preserve">
+    <value>Enable Windows Services</value>
+  </data>
+  <data name="String642" xml:space="preserve">
+    <value>Enable Network Services</value>
+  </data>
+  <data name="String643" xml:space="preserve">
+    <value>Network Services Options</value>
+  </data>
+  <data name="String644" xml:space="preserve">
+    <value>Enable IP auto-completion</value>
+  </data>
+  <data name="String645" xml:space="preserve">
+    <value>Enable integrated network services</value>
+  </data>
+  <data name="String646" xml:space="preserve">
+    <value>List layout options</value>
+  </data>
+  <data name="String647" xml:space="preserve">
+    <value>Number of elements per page in the lists:</value>
+  </data>
+  <data name="String648" xml:space="preserve">
+    <value>Tools section options</value>
+  </data>
+  <data name="String649" xml:space="preserve">
+    <value>Enter tool title...</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>Last modification date</value>
+  </data>
+  <data name="String650" xml:space="preserve">
+    <value>Enter tool link...</value>
+  </data>
+  <data name="String651" xml:space="preserve">
+    <value>Title and tool link no.</value>
+  </data>
+  <data name="String652" xml:space="preserve">
+    <value>About ITSuite</value>
+  </data>
+  <data name="String653" xml:space="preserve">
+    <value>ITSuite version 4.1.2.0 SQL Server (localDB)</value>
+  </data>
+  <data name="String654" xml:space="preserve">
+    <value>BSD-3-clause License</value>
+  </data>
+  <data name="String655" xml:space="preserve">
+    <value>Official ITSuite Guide</value>
+  </data>
+  <data name="String656" xml:space="preserve">
+    <value>ITSuite official site</value>
+  </data>
+  <data name="String657" xml:space="preserve">
+    <value>Ame Amer official website</value>
+  </data>
+  <data name="String658" xml:space="preserve">
+    <value>Enter the ITSuite server address (ex. &lt;i&gt;http://localhost/itsuite/&lt;/i&gt;):</value>
+  </data>
+  <data name="String659" xml:space="preserve">
+    <value>The settings have been saved.</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>Last modified time</value>
+  </data>
+  <data name="String660" xml:space="preserve">
+    <value>Error. You have not entered the pagination value.</value>
+  </data>
+  <data name="String661" xml:space="preserve">
+    <value>Error. The pagination value must be a number.</value>
+  </data>
+  <data name="String662" xml:space="preserve">
+    <value>Error. Missing link title for tool no.</value>
+  </data>
+  <data name="String663" xml:space="preserve">
+    <value>Error. Missing link for tool no. </value>
+  </data>
+  <data name="String664" xml:space="preserve">
+    <value>Select the add-on file to install, then select upload to start the installation.</value>
+  </data>
+  <data name="String665" xml:space="preserve">
+    <value>Add-on successfully installed</value>
+  </data>
+  <data name="String666" xml:space="preserve">
+    <value>Invalid add-on file</value>
+  </data>
+  <data name="String667" xml:space="preserve">
+    <value>Error installing add-on. Check the permissions of the ITSuite files.</value>
+  </data>
+  <data name="String668" xml:space="preserve">
+    <value>The add-on is already installed.</value>
+  </data>
+  <data name="String669" xml:space="preserve">
+    <value>The add-on has been successfully uninstalled.</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>System language</value>
+  </data>
+  <data name="String670" xml:space="preserve">
+    <value>The add-on complies with the security requirements.</value>
+  </data>
+  <data name="String671" xml:space="preserve">
+    <value>The add-on does not meet the security requirements.</value>
+  </data>
+  <data name="String672" xml:space="preserve">
+    <value>Administrators, ticketing technicians</value>
+  </data>
+  <data name="String673" xml:space="preserve">
+    <value>Administrators, customers</value>
+  </data>
+  <data name="String674" xml:space="preserve">
+    <value>Administrators, ticketing technicians, customers</value>
+  </data>
+  <data name="String675" xml:space="preserve">
+    <value>Administrators</value>
+  </data>
+  <data name="String676" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="String677" xml:space="preserve">
+    <value>Technical name:</value>
+  </data>
+  <data name="String678" xml:space="preserve">
+    <value>Author:</value>
+  </data>
+  <data name="String679" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>The new passwords do not match. Please, try again.</value>
+  </data>
+  <data name="String680" xml:space="preserve">
+    <value>Are you sure you want to delete?</value>
+  </data>
+  <data name="String681" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="String682" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="String683" xml:space="preserve">
+    <value>Here you can manage the ITSuite add-ons</value>
+  </data>
+  <data name="String684" xml:space="preserve">
+    <value>Installed add-ons</value>
+  </data>
+  <data name="String685" xml:space="preserve">
+    <value>Add-on installation</value>
+  </data>
+  <data name="String686" xml:space="preserve">
+    <value>E-mail service</value>
+  </data>
+  <data name="String687" xml:space="preserve">
+    <value>Error testing e-mail service. Check the entered data and try again. &lt;br /&gt; &lt;br /&gt; Details: </value>
+  </data>
+  <data name="String688" xml:space="preserve">
+    <value>Email service test successful. Check your mailbox to see if the ITSuite test message has been received.</value>
+  </data>
+  <data name="String689" xml:space="preserve">
+    <value>Error. Missing new element data. Check the entered data and try again.</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>The password must be at least 8 characters.</value>
+  </data>
+  <data name="String690" xml:space="preserve">
+    <value>E-mail service management</value>
+  </data>
+  <data name="String691" xml:space="preserve">
+    <value>On this page you can configure the ITSuite e-mail service</value>
+  </data>
+  <data name="String692" xml:space="preserve">
+    <value>Enable e-mail service for ticket management</value>
+  </data>
+  <data name="String693" xml:space="preserve">
+    <value>Mail server settings</value>
+  </data>
+  <data name="String694" xml:space="preserve">
+    <value>Address of the outgoing mail server:</value>
+  </data>
+  <data name="String695" xml:space="preserve">
+    <value>E-mail service settings</value>
+  </data>
+  <data name="String696" xml:space="preserve">
+    <value>E-mail address of the sender of the notification emails:</value>
+  </data>
+  <data name="String697" xml:space="preserve">
+    <value>E-mail opening message:</value>
+  </data>
+  <data name="String698" xml:space="preserve">
+    <value>E-mail closing message:</value>
+  </data>
+  <data name="String699" xml:space="preserve">
+    <value>List of recipients of e-mail notifications</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Enter username</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>The user's password has been successfully changed.</value>
+  </data>
+  <data name="String700" xml:space="preserve">
+    <value>Enter new e-mail...</value>
+  </data>
+  <data name="String701" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="String702" xml:space="preserve">
+    <value>Test of the ITSuite email service. &lt;br /&gt; &lt;br /&gt; If you can read this message, the ITSuite email system has been configured correctly. Good use!</value>
+  </data>
+  <data name="String703" xml:space="preserve">
+    <value>ITSuite by ameamer.com | E-mail service test</value>
+  </data>
+  <data name="String704" xml:space="preserve">
+    <value>Error. Missing new element data. Check the entered data and try again.</value>
+  </data>
+  <data name="String705" xml:space="preserve">
+    <value>Here you can manage the business software list</value>
+  </data>
+  <data name="String706" xml:space="preserve">
+    <value>Enter new software name...</value>
+  </data>
+  <data name="String707" xml:space="preserve">
+    <value>Enter link of the new software...</value>
+  </data>
+  <data name="String708" xml:space="preserve">
+    <value>Software name</value>
+  </data>
+  <data name="String709" xml:space="preserve">
+    <value>Software link</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>Your password is incorrect.</value>
+  </data>
+  <data name="String710" xml:space="preserve">
+    <value>ITSuite - Added new ticket with no. </value>
+  </data>
+  <data name="String711" xml:space="preserve">
+    <value>Added new ticket with no. </value>
+  </data>
+  <data name="String712" xml:space="preserve">
+    <value> on </value>
+  </data>
+  <data name="String713" xml:space="preserve">
+    <value> at </value>
+  </data>
+  <data name="String714" xml:space="preserve">
+    <value>Go to details</value>
+  </data>
+  <data name="String715" xml:space="preserve">
+    <value>ITSuite - New details added to ticket #</value>
+  </data>
+  <data name="String716" xml:space="preserve">
+    <value>New details have been added to ticket #</value>
+  </data>
+  <data name="String717" xml:space="preserve">
+    <value>ITSuite - Closed ticket #</value>
+  </data>
+  <data name="String718" xml:space="preserve">
+    <value>Closed ticket #</value>
+  </data>
+  <data name="String719" xml:space="preserve">
+    <value>Closing notes: </value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>IT Services</value>
+  </data>
+  <data name="String720" xml:space="preserve">
+    <value>Put on hold on: </value>
+  </data>
+  <data name="String721" xml:space="preserve">
+    <value>You have not specified any reason for putting on hold. Unable to put on hold.</value>
+  </data>
+  <data name="String722" xml:space="preserve">
+    <value>ITSuite - Moved on hold ticket #</value>
+  </data>
+  <data name="String723" xml:space="preserve">
+    <value>Moved on hold ticket #</value>
+  </data>
+  <data name="String724" xml:space="preserve">
+    <value>Pending reason: </value>
+  </data>
+  <data name="String725" xml:space="preserve">
+    <value>ITSuite - New file uploaded to ticket #</value>
+  </data>
+  <data name="String726" xml:space="preserve">
+    <value>New file uploaded to ticket #</value>
+  </data>
+  <data name="String727" xml:space="preserve">
+    <value>ITSuite - New assignment to ticket #</value>
+  </data>
+  <data name="String728" xml:space="preserve">
+    <value>New assignment to ticket #</value>
+  </data>
+  <data name="String729" xml:space="preserve">
+    <value>E-mail succesfully sent to administrators.</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>PC management</value>
+  </data>
+  <data name="String730" xml:space="preserve">
+    <value>Error sending e-mail to administrators. Details: </value>
+  </data>
+  <data name="String731" xml:space="preserve">
+    <value>Here are the links to download the business software</value>
+  </data>
+  <data name="String732" xml:space="preserve">
+    <value>All prouct assistance requests</value>
+  </data>
+  <data name="String733" xml:space="preserve">
+    <value>Here you can manage all requests for assistance on company products, such as guarantees</value>
+  </data>
+  <data name="String734" xml:space="preserve">
+    <value>Product assistance, closed requests</value>
+  </data>
+  <data name="String735" xml:space="preserve">
+    <value>Product assistance, open requests</value>
+  </data>
+  <data name="String736" xml:space="preserve">
+    <value>Here you can manage closed requests for assistance on company products, such as guarantees</value>
+  </data>
+  <data name="String737" xml:space="preserve">
+    <value>Closure reason</value>
+  </data>
+  <data name="String738" xml:space="preserve">
+    <value>Opening date and time</value>
+  </data>
+  <data name="String739" xml:space="preserve">
+    <value>Here you can manage open requests for assistance on company products, such as guarantees</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>PC list</value>
+  </data>
+  <data name="String740" xml:space="preserve">
+    <value>Product assistance details</value>
+  </data>
+  <data name="String741" xml:space="preserve">
+    <value> floor </value>
+  </data>
+  <data name="String742" xml:space="preserve">
+    <value> room </value>
+  </data>
+  <data name="String743" xml:space="preserve">
+    <value>You did not specify any details in the new update. Unable to add.</value>
+  </data>
+  <data name="String744" xml:space="preserve">
+    <value>Details added on: </value>
+  </data>
+  <data name="String745" xml:space="preserve">
+    <value>You have not specified any details for the closure. Unable to close.</value>
+  </data>
+  <data name="String746" xml:space="preserve">
+    <value>Product assistance no. </value>
+  </data>
+  <data name="String747" xml:space="preserve">
+    <value>Details of the request for assistance no. </value>
+  </data>
+  <data name="String748" xml:space="preserve">
+    <value>Product in assistance</value>
+  </data>
+  <data name="String749" xml:space="preserve">
+    <value>Enter a note for the chosen update by the keys below...</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>Monitor list</value>
+  </data>
+  <data name="String750" xml:space="preserve">
+    <value>Add note and close request</value>
+  </data>
+  <data name="String751" xml:space="preserve">
+    <value>Opening reason</value>
+  </data>
+  <data name="String752" xml:space="preserve">
+    <value>Other hardware</value>
+  </data>
+  <data name="String753" xml:space="preserve">
+    <value>Printer</value>
+  </data>
+  <data name="String754" xml:space="preserve">
+    <value>PC</value>
+  </data>
+  <data name="String755" xml:space="preserve">
+    <value>LOG assistance requests section</value>
+  </data>
+  <data name="String756" xml:space="preserve">
+    <value>On this page you can view the log of requests for assistance</value>
+  </data>
+  <data name="String757" xml:space="preserve">
+    <value>Product assistance, new request</value>
+  </data>
+  <data name="String758" xml:space="preserve">
+    <value>Error. You have not entered the type of product for assistance. Unable to add a new support request.</value>
+  </data>
+  <data name="String759" xml:space="preserve">
+    <value>Here you can add a new product assistance request</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>PC and monitor search</value>
+  </data>
+  <data name="String760" xml:space="preserve">
+    <value>Product type</value>
+  </data>
+  <data name="String761" xml:space="preserve">
+    <value>Select product type...</value>
+  </data>
+  <data name="String762" xml:space="preserve">
+    <value>Select PC</value>
+  </data>
+  <data name="String763" xml:space="preserve">
+    <value>Here you can search for the assistance requests</value>
+  </data>
+  <data name="String764" xml:space="preserve">
+    <value>Below you can view the result of your search for </value>
+  </data>
+  <data name="String765" xml:space="preserve">
+    <value>File explorer</value>
+  </data>
+  <data name="String766" xml:space="preserve">
+    <value>Here you can view the driver list for device:</value>
+  </data>
+  <data name="String767" xml:space="preserve">
+    <value>Driver list</value>
+  </data>
+  <data name="String768" xml:space="preserve">
+    <value>Driver folder </value>
+  </data>
+  <data name="String769" xml:space="preserve">
+    <value> not found.</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>Add PC/Monitor</value>
+  </data>
+  <data name="String770" xml:space="preserve">
+    <value>Community Edition</value>
+  </data>
+  <data name="String771" xml:space="preserve">
+    <value>© 2020</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>Printer management</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Printer list</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>Printer search</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>Add new printer</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>Other HW management</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Other hardware list</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>Hardware search</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Add new hardware</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Ticket management</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>Ticket search</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>All tickets</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>Product assistance</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>Request search</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>All requests</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Net services</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Windows services</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Business software</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>User management</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>User list</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Add user</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>User search</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+</root>

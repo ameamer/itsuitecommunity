@@ -1,0 +1,4 @@
+Questa cartella contiene i file dei componenti aggiuntivi. Non modificare.
+
+ITSuite by Ame Amer
+(c)2018 www.ameamer.com
